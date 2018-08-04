@@ -218,3 +218,16 @@ h5 {
   margin: 25px 0px;
   flex-wrap: wrap;
 }
+
+.phone {
+  margin-top: 10px;
+}
+
+.email {
+  margin-top: 10px;
+}
+
+.copyright {
+  margin-top: 10px;
+  text-align: center;
+}
