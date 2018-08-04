@@ -175,7 +175,25 @@ h5 {
 }
 
 .cta {
-  border: 2px solid yellow;
+  margin-top: 47px;
   display: flex;
   justify-content: space-between;
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.cta-text-title {
+  font-size: 74px;
+}
+
+.cta-button {
+  color: dodgerblue;
+  width: 147px;
 }
