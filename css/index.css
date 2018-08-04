@@ -197,3 +197,24 @@ h5 {
   color: dodgerblue;
   width: 147px;
 }
+
+.main-content {
+  border-top: 2px solid black;
+  margin: 47px 0px;
+}
+
+.top-content {
+  display: flex;
+  justify-content: space-around;
+}
+.bottom-content {
+  display: flex;
+  justify-content: space-evenly;
+  padding-right: 10px;
+  border-bottom: 2px solid black;
+}
+
+.text-content {
+  margin: 25px 0px;
+  flex-wrap: wrap;
+}
