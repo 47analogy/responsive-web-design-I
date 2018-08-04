@@ -231,3 +231,43 @@ h5 {
   margin-top: 10px;
   text-align: center;
 }
+
+/*<----------------------media queries here-------------->*/
+
+@media (max-width: 800px) {
+  .container {
+    margin: 0px 20px;
+    width: 800px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .nav {
+    order: 2;
+    margin-top: 30px;
+  }
+
+  .nav-list {
+    width: 800px;
+  }
+
+  .header-image {
+    display: none;
+  }
+
+  .text-content {
+    margin: 30px 5px;
+  }
+
+  .middle-img {
+    width: 747px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    background-color: purple;
+  }
+}
