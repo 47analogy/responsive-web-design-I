@@ -150,8 +150,8 @@ h5 {
 }
 
 .container {
-  width: 880px;
-  margin: auto;
+  width: 100%;
+  margin: auto 0;
 }
 
 .header {
@@ -200,7 +200,7 @@ h5 {
 
 .main-content {
   border-top: 2px solid black;
-  margin: 47px 0px;
+  margin: 47px 0;
 }
 
 .top-content {
@@ -215,7 +215,7 @@ h5 {
 }
 
 .text-content {
-  margin: 25px 0px;
+  margin: 25px 0;
   flex-wrap: wrap;
 }
 
@@ -234,10 +234,12 @@ h5 {
 
 /*<----------------------media queries here-------------->*/
 
+/*-----------------------800px(tablet)------------------->*/
 @media (max-width: 800px) {
   .container {
     margin: 0px 20px;
-    width: 800px;
+    /* margin: auto 0; */
+    width: 100%;
   }
 
   .header {
@@ -245,12 +247,13 @@ h5 {
   }
 
   .nav {
+    width: 90%;
     order: 2;
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
-  .nav-list {
-    width: 800px;
+  .nav-list li {
+    align-items: flex-end;
   }
 
   .header-image {
@@ -258,7 +261,12 @@ h5 {
   }
 
   .text-content {
-    margin: 30px 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .top-content .text-content {
+    margin: 18px;
   }
 
   .middle-img {
@@ -266,21 +274,39 @@ h5 {
   }
 }
 
+/*-----------------------500px(mobile)------------------->*/
+
 @media (max-width: 500px) {
   .container {
-    width: 500px;
+    width: 100%;
     margin: auto 0;
     padding: 0 5px;
+    border: 2px solid red;
   }
+
+  .header {
+    justify-content: center;
+  }
+
   .nav-list {
+    width: 100%;
     flex-direction: column;
     align-items: center;
-    border: 2px solid green;
+    /* border: 2px solid green; */
   }
 
   .nav-list li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
     border-top: 1px solid gray;
-    margin-top: 20px;
+    margin-top: 5px;
+  }
+
+  .nav-list li a {
+    text-decoration: none;
   }
 
   .top-content {
