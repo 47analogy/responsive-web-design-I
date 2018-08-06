@@ -281,7 +281,6 @@ h5 {
     width: 100%;
     margin: auto 0;
     padding: 0 5px;
-    border: 2px solid red;
   }
 
   .header {
@@ -292,7 +291,6 @@ h5 {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    /* border: 2px solid green; */
   }
 
   .nav-list li {
